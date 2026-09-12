@@ -1,0 +1,11 @@
+[project]
+name = "agent-lab"
+version = "0.1.0"
+description = "A learning project for LLM and Agent engineering."
+requires-python = ">=3.11"
+
+dependencies = [
+    "openai",
+    "python-dotenv",
+    "pydantic",
+]
