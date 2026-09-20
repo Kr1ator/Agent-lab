@@ -1,15 +1,17 @@
 # Agent Lab
 
-一个用于学习 LLM 与 Agent 基础开发的 Python 小项目。项目演示了如何调用 DeepSeek API，并将模型回复校验为固定的数据结构。
+一个按周持续迭代、用于学习 LLM 与 Agent 工程的 Python 项目。
+
+当前已完成 Week 1：Structured LLM App。程序会调用 DeepSeek API，并将模型回复校验为固定的数据结构。
 
 ## 项目结构
 
 ```text
-src/
-├── main.py      # 程序入口：读取终端问题并打印结果
-├── llm.py       # 调用 LLM、处理接口和格式错误
-├── schemas.py   # 定义 AgentResponse 数据结构
-└── config.py    # 读取环境变量配置
+src/                   # 持续演进的当前程序
+experiments/week01/    # Week 1 实验代码
+experiments/week02/    # Week 2 实验代码
+docs/progress/         # 每周学习记录
+tests/                 # 正式测试
 ```
 
 ## 安装依赖
@@ -45,3 +47,12 @@ python -m src.main
 - `confidence`：模型置信度（0 到 1）
 
 模型返回的 JSON 会通过 Pydantic 校验；接口调用失败或数据格式不符合要求时，程序会显示相应错误信息。
+
+## Weekly Progress
+
+每周的学习目标、实现和局限记录在 [`docs/progress/`](docs/progress/) 中。
+
+## Versions / Milestones
+
+- `v0.1` — Week 1 — Structured LLM App
+- `v0.2` — Week 2 — Raw Tool-Calling Agent（未开始）
