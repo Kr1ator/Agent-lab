@@ -10,7 +10,7 @@
 src/                   # 持续演进的当前程序
 experiments/week01/    # Week 1 实验代码
 experiments/week02/    # Week 2 实验代码
-docs/progress/         # 每周学习记录
+docs/Notes/            # 每周学习笔记
 tests/                 # 正式测试
 ```
 
@@ -32,8 +32,6 @@ DEEPSEEK_BASE_URL=https://api.deepseek.com
 DEEPSEEK_MODEL=deepseek-v4-flash
 ```
 
-不要将 `.env` 或真实 API Key 提交到 Git 仓库。
-
 ## 运行
 
 ```bash
@@ -48,9 +46,11 @@ python -m src.main
 
 模型返回的 JSON 会通过 Pydantic 校验；接口调用失败或数据格式不符合要求时，程序会显示相应错误信息。
 
-## Weekly Progress
+## Weekly Notes
 
-每周的学习目标、实现和局限记录在 [`docs/progress/`](docs/progress/) 中。
+每周笔记存放在 [`docs/Notes/`](docs/Notes/)：
+
+- [Week 1 — Structured LLM App](docs/Notes/week01.md)
 
 ## Versions / Milestones
 
